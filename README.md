@@ -18,7 +18,7 @@
 **Linux Tools** - a script that contains all the important commands and things to make using Linux easier without a browser.
 
 <p align=center>
-  <img src="https://i.imgur.com/pVpWZQI.png">
+  <img src="https://i.imgur.com/LwzQMxd.png">
 </p>
 
 # Installation
