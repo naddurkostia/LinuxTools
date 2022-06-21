@@ -1,14 +1,16 @@
- # Linux Package Helper for Begginers
- 
- **All avilable Linux distro:** *Arch Linux*, *Manjaro Linux*
- 
- **Linux distributions soon:** *Debian* 
+ # Linux Tools
 
-  <a href="#what-is-this">Installation</a>
+
+<p align="center">
+ Available distro: Arch linux, Manjaro [ PKGBUILD ] | All distro [ _main_.py ]
+</p> 
+ 
+<p align=center>
+  <a href="#what-is-this">What is this?</a>
   •
-  <a href="#installation">Install needed packages</a>
+  <a href="#installation">Installation</a>
   •
-  <a href="#motivation">Package description</a>
+  <a href="#motivation">Motication</a>
 </p>
 
 # What is this?
@@ -21,14 +23,12 @@
 
 # Installation
 
-**I will add to this section soon**
-
-<p align=center>
-  <img src="https://i.imgur.com/nAGKswQ.png">
-</p>
+1. You need to download release from [here](https://github.com/naddurkostia/LinuxTools/releases/tag/PKGBUILD)
+2. Write the command `makepkg -si`
+3. **Done!** Now you can write the command `LinuxTools`
 
 # Motivation
 
-<p align=center>
-  <img src="https://i.imgur.com/nAGKswQ.png">
-</p>
+<h4 align="center">
+ I just want to make using Linux more convenient and contribute to the development and promotion of Linux
+</h4>
