@@ -6,11 +6,11 @@
 </p> 
  
 <p align=center>
-  <a href="#what-is-this">Installation</a>
+  <a href="#what-is-this">What is this?</a>
   •
-  <a href="#installation">Install needed packages</a>
+  <a href="#installation">Installation</a>
   •
-  <a href="#motivation">Package description</a>
+  <a href="#motivation">Motication</a>
 </p>
 
 # What is this?
