@@ -14,8 +14,9 @@ import requests
 import youtube_dl
 from cgitb import text
 from translate import Translator
+import json
 
-options = ['YT video downloader', 'IP Checker', 'Country Code Checker', 'ETH Price', 'Youtube Audio Downloader', 'Language Translation']
+options = ['Crypto Price', 'YT video downloader', 'IP Checker', 'Country Code Checker', 'Youtube Audio Downloader', 'Language Translation']
 choice = enquiries.choose('Choose one of these options: ', options)
 
 if options == 'Hello World':
@@ -31,6 +32,37 @@ else:
         yt = pytube.YouTube(link)
         yt.streams.first().download()
         print("Downloaded!", link)
+
+    elif choice == 'Crypto Price':
+        # url = "https://bitcoinaverage-global-ethereum-index-v1.p.rapidapi.com/indices/global/ticker/ETHUSD"
+
+        # headers = {
+        # 	"X-RapidAPI-Key": "b41fcdb10bmshc8214c075e394acp1a55eejsna61d047ecf39",
+        # 	"X-RapidAPI-Host": "bitcoinaverage-global-ethereum-index-v1.p.rapidapi.com"
+        # }
+        
+        # response = requests.request("GET", url, headers=headers)
+        
+        # # Print only Ethernet price
+        # print("ETH Price: " + str(response.json()['last'])) 
+
+        # Defining Binance API URL
+        key = "https://api.binance.com/api/v3/ticker/price?symbol="
+
+        # Making list for multiple crypto's
+        currencies = ["BTCUSDT", "DOGEUSDT", "LTCUSDT", "ETHUSDT", "SOLUSDT", "TRXUSDT", "BNBUSDT"]
+        j = 0
+
+        # running loop to print all crypto prices
+        for i in currencies:
+
+            # completing API for request
+            url = key+currencies[j]  
+            data = requests.get(url)
+            data = data.json()
+            j = j+1
+            print(f"{data['symbol']} price is {data['price']}")
+
 
     elif choice == 'IP Checker':
 
@@ -52,18 +84,6 @@ else:
         text = input('Enter phone number: ')
         phone_number = phonenumbers.parse(text) 
         print(geocoder.description_for_number(phone_number, 'en'))  
-    elif choice == 'ETH Price':
-        url = "https://bitcoinaverage-global-ethereum-index-v1.p.rapidapi.com/indices/global/ticker/ETHUSD"
-
-        headers = {
-        	"X-RapidAPI-Key": "b41fcdb10bmshc8214c075e394acp1a55eejsna61d047ecf39",
-        	"X-RapidAPI-Host": "bitcoinaverage-global-ethereum-index-v1.p.rapidapi.com"
-        }
-        
-        response = requests.request("GET", url, headers=headers)
-        
-        # Print only Ethernet price
-        print("ETH Price: " + str(response.json()['last'])) 
 
     elif choice == 'Youtube Audio Downloader':
         def download_ytvid_as_mp3():
