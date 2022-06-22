@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 
 import enquiries
 from os import link
@@ -12,8 +12,10 @@ import phonenumbers
 from phonenumbers import geocoder
 import requests
 import youtube_dl
+from cgitb import text
+from translate import Translator
 
-options = ['YT video downloader', 'IP Checker', 'Country Code Checker', 'ETH Price', 'Youtube Audio Downloader']
+options = ['YT video downloader', 'IP Checker', 'Country Code Checker', 'ETH Price', 'Youtube Audio Downloader', 'Language Translation']
 choice = enquiries.choose('Choose one of these options: ', options)
 
 if options == 'Hello World':
@@ -79,6 +81,16 @@ else:
 
             print("Download complete... {}".format(filename))
         download_ytvid_as_mp3()
+
+    elif choice == 'Language Translation':
+        text = input("Enter text to translate: ")
+
+        lang = input("Enter language(Spanish, German, etc): ")
+
+        translator= Translator(to_lang=lang)
+        translation = translator.translate(text)
+        print (translation)
+
 
     
 
