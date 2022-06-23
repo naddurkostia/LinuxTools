@@ -1,9 +1,5 @@
  # Linux Tools
 
-<p align=center>
- If you have any problems with the script: write a topic in issues or message me in Private Messages Instagram or Telegram
-</p>
-
 <p align="center">
  Available distro: Arch linux, Manjaro [ PKGBUILD ] | Another distro [ _main_.py ] 
 </p> 
@@ -16,6 +12,20 @@
   <a href="#what-is-this">What is this?</a>
   •
   <a href="#installation">Installation</a>
+  •
+  <a href="#motivation">Motication</a>
+</p>
+
+</br>
+
+<p align=center>
+ If you have any problems with the script: write a topic in issues or message me in DM Instagram or Telegram
+</p>
+
+<p align=center>
+  <a href="https://www.instagram.com/nadduur/">Instagram</a>
+  •
+  <a href="https://t.me/kostiandd">Installation</a>
   •
   <a href="#motivation">Motication</a>
 </p>
