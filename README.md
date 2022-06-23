@@ -1,7 +1,7 @@
  # Linux Tools
 
 <p align="center">
- Available distro: Arch linux, Manjaro [ PKGBUILD ] | Other distro [ _main_.py ] 
+ Available distro: Arch linux, Manjaro [ PKGBUILD ] | Other distro [ _main_ ] 
 </p> 
 
 <p align=center>
@@ -38,9 +38,18 @@
 
 # Installation
 
+**Arch Linux or Manjaro Linux**
+
 1. You need to download release from [here](https://github.com/naddurkostia/LinuxTools/releases/tag/PKGBUILD)
 2. Write the command `makepkg -si`
 3. **Done!** Now you can write the command `LinuxTools`
+
+---
+
+**Other distro**
+
+*I will write tomorrow!* **(24.06.22)**
+
 
 # Motivation
 
