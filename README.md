@@ -19,11 +19,11 @@
 </br>
 
 <p align=center>
- If you have any problems with the script: write a topic in issues or message me in DM Instagram or Twitter
+ If you have any problems with the script: write a topic in issues or message me in DM Twitter 
 </p>
 
 <p align=center>
-  <a href="https://www.instagram.com/nadduur/">Instagram</a>
+  <a href="https://github.com/naddurkostia/LinuxTools/issues">Issues</a>
   •
   <a href="https://twitter.com/naddurkostia">Twitter</a>
 </p>
