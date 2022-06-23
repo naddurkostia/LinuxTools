@@ -1,6 +1,10 @@
  # Linux Tools
 
 <p align="center">
+ The script is updated every day and new functionality is added!
+</p>
+
+<p align="center">
  Available distro: Arch linux, Manjaro [ PKGBUILD ] | Other distro [ _main_ ] 
 </p> 
 
@@ -33,7 +37,7 @@
 **Linux Tools** - a script that contains all the important commands and things to make using Linux easier without a browser.
 
 <p align=center>
-  <img src="https://i.imgur.com/AOKalTA.png">
+  <img src="https://i.imgur.com/dUCVJ5c.png">
 </p>
 
 # Installation
