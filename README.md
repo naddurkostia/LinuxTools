@@ -1,7 +1,7 @@
  # Linux Tools
 
 <p align="center">
- Available distro: Arch linux, Manjaro [ PKGBUILD ] | Another distro [ _main_.py ] 
+ Available distro: Arch linux, Manjaro [ PKGBUILD ] | Other distro [ _main_.py ] 
 </p> 
 
 <p align=center>
