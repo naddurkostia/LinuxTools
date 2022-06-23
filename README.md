@@ -1,7 +1,7 @@
  # Linux Tools
 
 <p align="center">
- The script is updated every day and new functionality is added!
+ The script will be updated and new features will be added!
 </p>
 
 <p align="center">
