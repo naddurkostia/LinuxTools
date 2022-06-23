@@ -1,9 +1,16 @@
  # Linux Tools
 
+<p align=center>
+ If you have any problems with the script: write a topic in issues or message me in Private Messages Instagram or Telegram
+</p>
 
 <p align="center">
- Available distro: Arch linux, Manjaro [ PKGBUILD ] | All distro [ _main_.py ]
+ Available distro: Arch linux, Manjaro [ PKGBUILD ] | Another distro [ _main_.py ] 
 </p> 
+
+<p align=center>
+  Soon I will make package for Debian and Ubuntu likes OS!
+</p>
  
 <p align=center>
   <a href="#what-is-this">What is this?</a>
