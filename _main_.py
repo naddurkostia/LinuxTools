@@ -1,7 +1,8 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 
 import enquiries
 from os import link
+from numpy import number
 import pytube
 from cgitb import text
 from distutils.log import info
@@ -16,7 +17,7 @@ from cgitb import text
 from translate import Translator
 import json
 
-options = ['Crypto Price', 'YT video downloader', 'IP Checker', 'Country Code Checker', 'Youtube Audio Downloader', 'Language Translation']
+options = ['Crypto Price', 'YT video downloader', 'IP Checker', 'Country Code Checker', 'Youtube Audio Downloader', 'Language Translation', 'Calculator']
 choice = enquiries.choose('Choose one of these options: ', options)
 
 if options == 'Hello World':
@@ -110,6 +111,33 @@ else:
         translator= Translator(to_lang=lang)
         translation = translator.translate(text)
         print (translation)
+
+    elif choice == 'Calculator':
+        def calculate():
+
+            first = int(input("Enter first number: "))
+            second = int(input("Enter second number: "))
+            operator = input("Enter operator: ")
+
+
+            if operator == '+':
+                # print('{} + {} = '.format(first, second))
+                print(first + second)
+
+            elif operator == '-':
+                # print('{} - {} = '.format(first, second))
+                print(first - second)
+
+            elif operator == '*':
+                # print('{} * {} = '.format(first, second))
+                print(first * second)
+
+            elif operator == '/':
+                # print('{} / {} = '.format(first, second))
+                print(first / second)
+
+
+        calculate()
 
 
     
