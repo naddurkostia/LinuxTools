@@ -1,5 +1,5 @@
 pkgname=LinuxTools
-pkgver=1.0.0
+pkgver=1.0.2
 pkgrel=1
 pkgdesc="A script for comfortable package installation."
 arch=('x86_64')
@@ -10,6 +10,6 @@ source=("https://github.com/naddurkostia/${pkgname}/archive/${pkgver}.tar.gz")
 md5sums=('SKIP')
 
 package() {
-  install -Dm755 "$srcdir/$pkgname-$pkgver/_main_.py" "$pkgdir/usr/bin/$pkgname"
+  install -Dm755 "$srcdir/$pkgname-$pkgver/dist/_main_" "$pkgdir/usr/bin/$pkgname"
   install -Dm644 "$srcdir/$pkgname-$pkgver/LICENSE" "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
 }
