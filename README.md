@@ -1,7 +1,11 @@
  # Linux Tools
 
 <p align="center">
- Available distro: Arch linux, Manjaro [ PKGBUILD ] | Other distro [ _main_.py ] 
+ The script will be updated and new features will be added!
+</p>
+
+<p align="center">
+ Available distro: Arch linux, Manjaro [ PKGBUILD ] | Other distro [ _main_ ] 
 </p> 
 
 <p align=center>
@@ -33,14 +37,23 @@
 **Linux Tools** - a script that contains all the important commands and things to make using Linux easier without a browser.
 
 <p align=center>
-  <img src="https://i.imgur.com/AOKalTA.png">
+  <img src="https://i.imgur.com/dUCVJ5c.png">
 </p>
 
 # Installation
 
+**Arch Linux or Manjaro Linux**
+
 1. You need to download release from [here](https://github.com/naddurkostia/LinuxTools/releases/tag/PKGBUILD)
 2. Write the command `makepkg -si`
 3. **Done!** Now you can write the command `LinuxTools`
+
+---
+
+**Other distro**
+
+*I will write tomorrow!* **(24.06.22)**
+
 
 # Motivation
 
