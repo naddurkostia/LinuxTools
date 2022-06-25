@@ -17,7 +17,7 @@ from cgitb import text
 from translate import Translator
 import json
 
-options = ['Crypto Price', 'YT video downloader', 'IP Checker', 'Country Code Checker', 'Youtube Audio Downloader', 'Language Translation', 'Calculator']
+options = ['Crypto Price', 'YT video downloader', 'IP Checker', 'Country Code Checker', 'Youtube Audio Downloader', 'Language Translation', 'Soon...']
 choice = enquiries.choose('Choose one of these options: ', options)
 
 if options == 'Hello World':
@@ -112,32 +112,8 @@ else:
         translation = translator.translate(text)
         print (translation)
 
-    elif choice == 'Calculator':
-        def calculate():
-
-            first = int(input("Enter first number: "))
-            second = int(input("Enter second number: "))
-            operator = input("Enter operator: ")
-
-
-            if operator == '+':
-                # print('{} + {} = '.format(first, second))
-                print(first + second)
-
-            elif operator == '-':
-                # print('{} - {} = '.format(first, second))
-                print(first - second)
-
-            elif operator == '*':
-                # print('{} * {} = '.format(first, second))
-                print(first * second)
-
-            elif operator == '/':
-                # print('{} / {} = '.format(first, second))
-                print(first / second)
-
-
-        calculate()
+    elif choice == 'Soon...':
+        print('Soon...')
 
 
     
