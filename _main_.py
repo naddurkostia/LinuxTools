@@ -16,8 +16,12 @@ import youtube_dl
 from cgitb import text
 from translate import Translator
 import json
+from bs4 import BeautifulSoup
+import requests
+from selenium import webdriver
+import time
 
-options = ['Crypto Price', 'YT video downloader', 'IP Checker', 'Country Code Checker', 'Youtube Audio Downloader', 'Language Translation', 'Soon...']
+options = ['Crypto Price', 'YT video downloader', 'IP Checker', 'Country Code Checker', 'Youtube Audio Downloader', 'Language Translation', 'Calculator', 'Instagram Photo Downloader']
 choice = enquiries.choose('Choose one of these options: ', options)
 
 if options == 'Hello World':
@@ -112,8 +116,53 @@ else:
         translation = translator.translate(text)
         print (translation)
 
-    elif choice == 'Soon...':
-        print('Soon...')
+    elif choice == 'Calculator':
+        def calculate():
+
+            first = int(input("Enter first number: "))
+            second = int(input("Enter second number: "))
+            operator = input("Enter operator: ")
+
+
+            if operator == '+':
+                # print('{} + {} = '.format(first, second))
+                print(first + second)
+
+            elif operator == '-':
+                # print('{} - {} = '.format(first, second))
+                print(first - second)
+
+            elif operator == '*':
+                # print('{} * {} = '.format(first, second))
+                print(first * second)
+
+            elif operator == '/':
+                # print('{} / {} = '.format(first, second))
+                print(first / second)
+
+            calculate()
+
+    elif choice == 'Instagram Photo Downloader':
+        link = input("Enter Instagram Image URL: ")
+
+        driver = webdriver.Chrome('chromedriver')
+
+        driver.get(link)
+
+        soup = BeautifulSoup(driver.page_source, 'lxml')
+
+        img = soup.find('img', class_='FFVAD')
+        img_url = img['src']
+
+        r = requests.get(img_url)
+
+        with open("instagram"+str(time.time())+".png",'wb') as f: 
+            f.write(r.content)
+
+        print('success')
+
+
+
 
 
     
